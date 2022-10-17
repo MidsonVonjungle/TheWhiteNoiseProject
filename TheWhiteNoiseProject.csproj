@@ -58,13 +58,25 @@
   <ItemGroup>
     <Compile Include="Animations\Quick Ranga.cs" />
     <Compile Include="Buffs\CardIconBuff.cs" />
+    <Compile Include="Buffs\TempCardBuff.cs" />
     <Compile Include="Buffs\WhiteNoiseBuf.cs" />
-    <Compile Include="Card Effects\WhiteNoiseBaseCard.cs" />
+    <Compile Include="Combat Page Effects\WhiteNoiseBaseCard.cs" />
     <Compile Include="Combat Page Effects\Combat Start Power -1.cs" />
+    <Compile Include="Combat Page Effects\Durandal.cs" />
     <Compile Include="Combat Page Effects\FuriosoCardAbility.cs" />
+    <Compile Include="Combat Page Effects\Old Boys Workshop.cs" />
+    <Compile Include="Combat Page Effects\Ranga Workshop.cs" />
+    <Compile Include="Combat Page Effects\Reverse Allas Workshop.cs" />
+    <Compile Include="Combat Page Effects\Reverse Atelier Logic.cs" />
+    <Compile Include="Combat Page Effects\Reverse Crystal Atelier.cs" />
+    <Compile Include="Combat Page Effects\Reverse Mook Workshop.cs" />
+    <Compile Include="Combat Page Effects\Reverse Zelkova Workshop.cs" />
+    <Compile Include="Combat Page Effects\Wheels Industries.cs" />
     <Compile Include="Dice Effects\Furioso dice.cs" />
     <Compile Include="Dice Effects\Multiply nat x3.cs" />
     <Compile Include="ModParameters.cs" />
+    <Compile Include="Passives\Roland From Another World.cs" />
+    <Compile Include="Passives\The Black Silence.cs" />
     <Compile Include="Passives\The White Noise.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

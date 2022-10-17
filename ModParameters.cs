@@ -1,21 +1,15 @@
-﻿namespace TheWhiteNoiseProject
+﻿using System.Collections.Generic;
+
+namespace TheWhiteNoiseProject
 {
     public static class ModParameters
     {
         public static string PackageId = "WhiteRoland.md588";
         public static LorId FuriosoCard = new LorId(PackageId, 10);
-    }
 
-    public enum TheWhiteNoiseCardsEnum
-    {
-        AtelierLogic = 1,
-        AllasWorkshop = 2,
-        MookWorkshop = 3,
-        OldBoysWorkshop = 4,
-        ZelkovaWorkshop = 5,
-        Durandal = 6,
-        CrystalAtelier = 7,
-        RangaWorkshop = 8,
-        WheelsIndustries = 9
+        public static List<int> BlackSilenceOriginalCards = new List<int>
+            { 702001, 702002, 702003, 702004, 702005, 702006, 702007, 702008, 702009 };
+
+        public static List<int> WhiteNoiseCards = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
     }
 }

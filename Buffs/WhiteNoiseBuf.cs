@@ -6,6 +6,7 @@ namespace TheWhiteNoiseProject.Buffs
     {
         protected override string keywordId => "BlackSilenceSpecial";
         protected override string keywordIconId => "BlackSilenceSpecialCard";
+
         public override void OnAddBuf(int addedStack)
         {
             stack += addedStack;

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TheWhiteNoiseProject.Buffs;
 
 namespace TheWhiteNoiseProject.Passives
@@ -12,7 +11,7 @@ namespace TheWhiteNoiseProject.Passives
         {
             var lorId = curCard.card.GetID();
             if (lorId.packageId != ModParameters.PackageId) return;
-            if (!_usedCount.Contains(lorId) && Enum.IsDefined(typeof(TheWhiteNoiseCardsEnum), lorId.id))
+            if (!_usedCount.Contains(lorId) && ModParameters.WhiteNoiseCards.Contains(lorId.id))
                 _usedCount.Add(lorId);
         }
 
@@ -28,7 +27,7 @@ namespace TheWhiteNoiseProject.Passives
                 battleDiceCardModel.RemoveBuf<BattleDiceCardBuf_WhiteNoiseEgoCount_md5488>();
                 var lorId = battleDiceCardModel.GetID();
                 if (lorId.packageId != ModParameters.PackageId) continue;
-                if (!_usedCount.Contains(id) && Enum.IsDefined(typeof(TheWhiteNoiseCardsEnum), lorId.id))
+                if (!_usedCount.Contains(id) && ModParameters.WhiteNoiseCards.Contains(lorId.id))
                     battleDiceCardModel.AddBuf(new BattleDiceCardBuf_WhiteNoiseEgoCount_md5488());
             }
 
