@@ -83,6 +83,7 @@
     <Compile Include="Combat Page Effects\Reverse Mook Workshop.cs" />
     <Compile Include="Combat Page Effects\Reverse Zelkova Workshop.cs" />
     <Compile Include="Combat Page Effects\Wheels Industries.cs" />
+    <Compile Include="Dice Attack Effects\DiceAttackEffect_ChainsawDown_md5488.cs" />
     <Compile Include="Dice Effects\Furioso dice.cs" />
     <Compile Include="Dice Effects\Multiply nat x3.cs" />
     <Compile Include="ModParameters.cs" />
@@ -92,5 +93,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WhiteNoiseInit.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
