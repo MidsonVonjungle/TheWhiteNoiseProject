@@ -37,8 +37,9 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>..\StaticDLL\KamiyoStaticUtil\bin\Debug\Assembly-CSharp.dll</HintPath>
     </Reference>
-    <Reference Include="BigDLL4221">
-      <HintPath>..\NewDLLRepository\bin\Debug\BigDLL4221.dll</HintPath>
+    <Reference Include="BigDLL4221, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NewDLL\bin\Debug\BigDLL4221.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

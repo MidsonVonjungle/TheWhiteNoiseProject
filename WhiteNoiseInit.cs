@@ -15,11 +15,13 @@ namespace TheWhiteNoiseProject
         {
             OnInitParameters();
             ArtUtil.GetArtWorks(new DirectoryInfo(WhiteNoiseModParameters.Path + "/ArtWork"));
+            ArtUtil.PreLoadBufIcons();
             CardUtil.ChangeCardItem(ItemXmlDataList.instance, WhiteNoiseModParameters.PackageId);
             PassiveUtil.ChangePassiveItem(WhiteNoiseModParameters.PackageId);
             LocalizeUtil.AddGlobalLocalize(WhiteNoiseModParameters.PackageId);
             LocalizeUtil.RemoveError();
             CardUtil.InitKeywordsList(new List<Assembly> { Assembly.GetExecutingAssembly() });
+            ArtUtil.InitCustomEffects(new List<Assembly> { Assembly.GetExecutingAssembly() });
         }
 
         private static void OnInitParameters()
@@ -29,6 +31,7 @@ namespace TheWhiteNoiseProject
                 Uri.UnescapeDataString(new UriBuilder(Assembly.GetExecutingAssembly().CodeBase).Path));
             ModParameters.Path.Add(WhiteNoiseModParameters.PackageId, WhiteNoiseModParameters.Path);
             OnInitSprites();
+            OnInitKeypages();
             OnInitCards();
             OnInitPassives();
             OnInitRewards();
@@ -65,6 +68,13 @@ namespace TheWhiteNoiseProject
             });
         }
 
+        private static void OnInitKeypages()
+        {
+            ModParameters.KeypageOptions.Add(WhiteNoiseModParameters.PackageId, new List<KeypageOptions>
+            {
+                new KeypageOptions(10000001,everyoneCanEquip: true,bookCustomOptions: new BookCustomOptions("Roland"))
+            });
+        }
         private static void OnInitCredenza()
         {
             ModParameters.CredenzaOptions.Add(WhiteNoiseModParameters.PackageId, new CredenzaOptions

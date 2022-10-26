@@ -4,8 +4,8 @@ namespace TheWhiteNoiseProject.Buffs
 {
     public class BattleUnitBuf_WhiteNoiseBuff_md5488 : BattleUnitBuf
     {
-        protected override string keywordId => "BlackSilenceSpecial";
-        protected override string keywordIconId => "BlackSilenceSpecialCard";
+        protected override string keywordId => "";
+        protected override string keywordIconId => "WhiteNoise_md5488";
 
         public override void OnAddBuf(int addedStack)
         {
