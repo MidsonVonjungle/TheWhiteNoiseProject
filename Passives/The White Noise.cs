@@ -10,14 +10,14 @@ namespace TheWhiteNoiseProject.Passives
         public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
         {
             var lorId = curCard.card.GetID();
-            if (lorId.packageId != ModParameters.PackageId) return;
-            if (!_usedCount.Contains(lorId) && ModParameters.WhiteNoiseCards.Contains(lorId.id))
+            if (lorId.packageId != WhiteNoiseModParameters.PackageId) return;
+            if (!_usedCount.Contains(lorId) && WhiteNoiseModParameters.WhiteNoiseCards.Contains(lorId.id))
                 _usedCount.Add(lorId);
         }
 
         public override void OnWaveStart()
         {
-            owner.personalEgoDetail.AddCard(ModParameters.FuriosoCard);
+            owner.personalEgoDetail.AddCard(WhiteNoiseModParameters.FuriosoCard);
         }
 
         public override void OnRoundStart()
@@ -26,8 +26,8 @@ namespace TheWhiteNoiseProject.Passives
             {
                 battleDiceCardModel.RemoveBuf<BattleDiceCardBuf_WhiteNoiseEgoCount_md5488>();
                 var lorId = battleDiceCardModel.GetID();
-                if (lorId.packageId != ModParameters.PackageId) continue;
-                if (!_usedCount.Contains(id) && ModParameters.WhiteNoiseCards.Contains(lorId.id))
+                if (lorId.packageId != WhiteNoiseModParameters.PackageId) continue;
+                if (!_usedCount.Contains(id) && WhiteNoiseModParameters.WhiteNoiseCards.Contains(lorId.id))
                     battleDiceCardModel.AddBuf(new BattleDiceCardBuf_WhiteNoiseEgoCount_md5488());
             }
 

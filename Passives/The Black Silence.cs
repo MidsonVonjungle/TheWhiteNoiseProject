@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using HarmonyLib;
 using TheWhiteNoiseProject.Buffs;
 
 namespace TheWhiteNoiseProject.Passives
@@ -7,7 +8,7 @@ namespace TheWhiteNoiseProject.Passives
     {
         public override void OnRoundStartAfter()
         {
-            var cardNumber = RandomUtil.SelectOne(ModParameters.BlackSilenceOriginalCards);
+            var cardNumber = RandomUtil.SelectOne(WhiteNoiseModParameters.BlackSilenceOriginalCards);
             var card = owner.allyCardDetail.AddNewCard(cardNumber);
             card.AddBuf(new BattleDiceCardBuf_TempCard_md5488());
         }
@@ -20,9 +21,9 @@ namespace TheWhiteNoiseProject.Passives
 
         public override void OnRoundEndTheLast()
         {
-            foreach (var card in owner.allyCardDetail.GetAllDeck()
-                         .Where(x => x.HasBuf<BattleDiceCardBuf_TempCard_md5488>()))
-                owner.allyCardDetail.ExhaustACardAnywhere(card);
+            owner.allyCardDetail.GetAllDeck()
+                .Where(x => x.HasBuf<BattleDiceCardBuf_TempCard_md5488>())
+                .Do(x => owner.allyCardDetail.ExhaustACardAnywhere(x));
         }
     }
 }

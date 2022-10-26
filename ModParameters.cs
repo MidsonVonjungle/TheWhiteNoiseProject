@@ -2,9 +2,10 @@
 
 namespace TheWhiteNoiseProject
 {
-    public static class ModParameters
+    public static class WhiteNoiseModParameters
     {
         public static string PackageId = "WhiteRoland.md588";
+        public static string Path;
         public static LorId FuriosoCard = new LorId(PackageId, 10);
 
         public static List<int> BlackSilenceOriginalCards = new List<int>
