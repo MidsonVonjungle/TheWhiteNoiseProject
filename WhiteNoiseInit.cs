@@ -79,7 +79,9 @@ namespace TheWhiteNoiseProject
         {
             ModParameters.CredenzaOptions.Add(WhiteNoiseModParameters.PackageId, new CredenzaOptions
             {
-                CredenzaOption = CredenzaEnum.NoCredenza
+                CredenzaOption = CredenzaEnum.NoCredenza,
+                BaseIconSpriteId = "Chapter1",
+                CredenzaName = "The White Noise"
             });
         }
     }
