@@ -100,6 +100,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sprite Attack Effects\4GauntletPunch.cs" />
     <Compile Include="Sprite Attack Effects\5Gunshot.cs" />
+    <Compile Include="Sprite Attack Effects\6ScytheBlunt.cs" />
+    <Compile Include="Sprite Attack Effects\6ScytheSlash.cs" />
+    <Compile Include="Sprite Attack Effects\7WolvSlash1.cs" />
+    <Compile Include="Sprite Attack Effects\7WolvSlash2.cs" />
     <Compile Include="WhiteNoiseInit.cs" />
   </ItemGroup>
   <ItemGroup />

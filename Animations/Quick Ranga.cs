@@ -45,12 +45,12 @@ namespace TheWhiteNoiseProject.Animations
             ICollection<RencounterManager.MovingAction> self,
             ICollection<RencounterManager.MovingAction> oppo)
         {
-            var movingAction1 = new RencounterManager.MovingAction(ActionDetail.S5, CharMoveState.Custom,
+            var movingAction1 = new RencounterManager.MovingAction(ActionDetail.S8, CharMoveState.Custom,
                 updateDir: false, delay: 0.2f);
             movingAction1.SetCustomMoving(MoveGauntlet1);
             movingAction1.customEffectRes = "BlackSilence_Gauntlet1";
             movingAction1.SetEffectTiming(EffectTiming.PRE, EffectTiming.NONE, EffectTiming.WITHOUT_DMGTEXT);
-            var movingAction2 = new RencounterManager.MovingAction(ActionDetail.S6, CharMoveState.Custom,
+            var movingAction2 = new RencounterManager.MovingAction(ActionDetail.S9, CharMoveState.Custom,
                 updateDir: false, delay: 0.2f);
             movingAction2.SetCustomMoving(MoveGauntlet2);
             movingAction2.customEffectRes = "BlackSilence_Gauntlet2";
@@ -69,7 +69,7 @@ namespace TheWhiteNoiseProject.Animations
             ICollection<RencounterManager.MovingAction> self,
             ICollection<RencounterManager.MovingAction> oppo)
         {
-            var movingAction1 = new RencounterManager.MovingAction(ActionDetail.S7, CharMoveState.Custom,
+            var movingAction1 = new RencounterManager.MovingAction(ActionDetail.S10, CharMoveState.Custom,
                 updateDir: false, delay: 0.5f);
             movingAction1.SetCustomMoving(MoveShortSword);
             movingAction1.customEffectRes = "FX_PC_RolRang_Dagger";
