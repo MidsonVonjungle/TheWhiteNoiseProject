@@ -30,6 +30,7 @@ namespace TheWhiteNoiseProject.Passives
                 if (!_usedCount.Contains(lorId) && WhiteNoiseModParameters.WhiteNoiseCards.Contains(lorId.id))
                     battleDiceCardModel.AddBuf(new BattleDiceCardBuf_WhiteNoiseEgoCount_md5488());
             }
+
             owner.bufListDetail.RemoveBufAll(typeof(BattleUnitBuf_WhiteNoiseSpecialCount_md5488));
             owner.bufListDetail.AddBuf(new BattleUnitBuf_WhiteNoiseSpecialCount_md5488
             {

@@ -5,9 +5,7 @@ using System.Reflection;
 using BigDLL4221.Enum;
 using BigDLL4221.Models;
 using BigDLL4221.Utils;
-using CustomInvitation;
-using CardOption = LOR_DiceSystem.CardOption;
-using MotionDetail = LOR_DiceSystem.MotionDetail;
+using LOR_DiceSystem;
 
 namespace TheWhiteNoiseProject
 {
@@ -76,15 +74,19 @@ namespace TheWhiteNoiseProject
         {
             ModParameters.KeypageOptions.Add(WhiteNoiseModParameters.PackageId, new List<KeypageOptions>
             {
-                new KeypageOptions(10000001,isDeckFixed:true,everyoneCanEquip: true,bookCustomOptions: new BookCustomOptions("Roland",motionSounds:new Dictionary<MotionDetail, MotionSound>
-                {
-                    { MotionDetail.S1 ,new MotionSound("Test.ogg")}
-                }))
+                new KeypageOptions(10000001, isDeckFixed: true, everyoneCanEquip: true,
+                    bookCustomOptions: new BookCustomOptions("Roland", originalSkin: "TheWhiteNoise_md5488",
+                        motionSounds: new Dictionary<MotionDetail, MotionSound>
+                        {
+                            { MotionDetail.S1, new MotionSound("Test.wav") }
+                        }))
             });
         }
+
         private static void OnInitCredenza()
         {
-            ModParameters.CredenzaOptions.Add(WhiteNoiseModParameters.PackageId, new CredenzaOptions(baseIconSpriteId: "Chapter1",credenzaName:"The White Noise"));
+            ModParameters.CredenzaOptions.Add(WhiteNoiseModParameters.PackageId,
+                new CredenzaOptions(baseIconSpriteId: "Chapter1", credenzaName: "The White Noise"));
         }
     }
 }

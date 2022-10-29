@@ -6,7 +6,7 @@ namespace TheWhiteNoiseProject.Dice_Attack_Effects
     {
         public override void Initialize(BattleUnitView self, BattleUnitView target, float destroyTime)
         {
-            SetParameters(WhiteNoiseModParameters.Path, 0.81f, 0.02f, overSelf: true);
+            SetParameters(WhiteNoiseModParameters.Path, 0.81f, 0.02f);
             base.Initialize(self, target, destroyTime);
         }
     }
