@@ -1,6 +1,6 @@
 ﻿using BigDLL4221.DiceEffects;
 
-namespace TheWhiteNoiseProject.Dice_Attack_Effects
+namespace TheWhiteNoiseProject.Sprite_Attack_Effects
 {
     public class DiceAttackEffect_Trident_md5488 : DiceAttackEffect_BaseAttackEffect_DLL4221
     {
