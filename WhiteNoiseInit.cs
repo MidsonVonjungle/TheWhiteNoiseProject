@@ -78,7 +78,23 @@ namespace TheWhiteNoiseProject
                     bookCustomOptions: new BookCustomOptions("Roland", originalSkin: "TheWhiteNoise_md5488",
                         motionSounds: new Dictionary<MotionDetail, MotionSound>
                         {
-                            { MotionDetail.S1, new MotionSound("Test.wav") }
+                            { MotionDetail.S1, new MotionSound("Chainsaw1.wav") },
+                            { MotionDetail.S2, new MotionSound("Chainsaw2.wav") },
+                            { MotionDetail.S3, new MotionSound("ChainsawBlock.wav") },
+                            { MotionDetail.Z, new MotionSound("Roland_DuelSword_Strong.wav") },
+                            { MotionDetail.G, new MotionSound("Roland_Guard.wav") },
+                            { MotionDetail.H, new MotionSound("Roland_Mace.wav") },
+                            { MotionDetail.S4, new MotionSound("RevolverShot.ogg") },
+                            { MotionDetail.S5, new MotionSound("RevolverShot.ogg") },
+                            { MotionDetail.F, new MotionSound("SniperShot.ogg") },
+                            { MotionDetail.S6, new MotionSound("Roland_Duralandal_Down.wav") },
+                            { MotionDetail.S7, new MotionSound("Roland_Duralandal_Up.wav") },
+                            { MotionDetail.S11, new MotionSound("Blue_Argalria_Strong_Atk1.wav") },
+                            { MotionDetail.S12, new MotionSound("Blue_Argalria_Strong_Atk2.wav") },
+                            { MotionDetail.S13, new MotionSound("StigmaMace.wav") },
+                            { MotionDetail.J, new MotionSound("StigmaAxe.wav") },
+                            { MotionDetail.S14, new MotionSound("StigmaDual.wav") },
+
                         }))
             });
         }
