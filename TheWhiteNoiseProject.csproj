@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Animations\dawnActionEdited.cs" />
     <Compile Include="Animations\Quick Ranga.cs" />
+    <Compile Include="Animations\ShortSword_md5488.cs" />
     <Compile Include="Buffs\CardIconBuff.cs" />
     <Compile Include="Buffs\TempCardBuff.cs" />
     <Compile Include="Buffs\WhiteNoiseBuf.cs" />
