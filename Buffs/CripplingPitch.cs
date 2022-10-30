@@ -14,7 +14,7 @@ namespace TheWhiteNoiseProject.Buffs
         public override string BufName => "Crippling Pitch";
 
         public override string bufActivatedText =>
-            "Inflict 2 Feeble and lower the *max* roll of all offensive die by 2 against The White Noise. If the opponent has 4 or more Strength, purge all its stacks instead.";
+            "Lower the *max* roll of all offensive die by 2 against The White Noise.";
 
         protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;

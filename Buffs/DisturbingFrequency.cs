@@ -15,7 +15,7 @@ namespace TheWhiteNoiseProject.Buffs
         public override string BufName => "Disturbing Pitch";
 
         public override string bufActivatedText =>
-            "Inflict 2 Disarm and lower the *min* roll of all defensive die by 2 against The White Noise.\n\n[Intensify] If the opponent has 4 or more Endured, purge all its stacks instead.";
+            "Lower the *min* roll of all defensive die by 2 against The White Noise.";
 
         protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;

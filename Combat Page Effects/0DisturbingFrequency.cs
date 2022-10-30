@@ -18,7 +18,10 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
             var strengthBuff = unit.bufListDetail.GetActivatedBufList()
                 .FirstOrDefault(x => x.bufType == KeywordBuf.Endurance && !x.IsDestroyed());
             if (strengthBuff == null || strengthBuff.stack < 4)
+            {
                 unit.bufListDetail.AddBuf(new BattleUnitBuf_DisturbingFrequency_md5488());
+                unit.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Disarm,2);
+            }
             else unit.bufListDetail.RemoveBufAll(KeywordBuf.Endurance);
         }
     }

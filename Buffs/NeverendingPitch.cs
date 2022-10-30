@@ -21,7 +21,7 @@ namespace TheWhiteNoiseProject.Buffs
         public override string BufName => "Neverending Pitch";
 
         public override string bufActivatedText =>
-            "If the opponent has Feeble, Disarm, Paralysis and/or Fragile, transfer half of the stacks of every ailment the next turn. If the opponent has no Feeble, Disarm, Fragile or Paralysis, inflict one of these ailments on hit at a 15% chance.";
+            "Inflict one of these ailments (Feeble, Disarm, Fragile or Paralysis) on take a hit at a 15% chance.";
 
         protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;

@@ -18,7 +18,10 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
             var strengthBuff = unit.bufListDetail.GetActivatedBufList()
                 .FirstOrDefault(x => x.bufType == KeywordBuf.Strength && !x.IsDestroyed());
             if (strengthBuff == null || strengthBuff.stack < 4)
+            {
                 unit.bufListDetail.AddBuf(new BattleUnitBuf_CripplingPitch_md5488());
+                unit.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Weak, 2);
+            }
             else unit.bufListDetail.RemoveBufAll(KeywordBuf.Strength);
         }
     }
