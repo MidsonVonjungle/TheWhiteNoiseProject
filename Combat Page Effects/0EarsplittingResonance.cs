@@ -1,4 +1,5 @@
-﻿using LOR_DiceSystem;
+﻿using BigDLL4221.Extensions;
+using LOR_DiceSystem;
 using TheWhiteNoiseProject.Buffs;
 
 namespace TheWhiteNoiseProject.Combat_Page_Effects
@@ -22,7 +23,13 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
             if (slashResist == AtkResist.Endure || slashResist == AtkResist.Immune) count++;
             if (pierceResist == AtkResist.Endure || pierceResist == AtkResist.Immune) count++;
             if (hitResist == AtkResist.Endure || hitResist == AtkResist.Immune) count++;
+            if(count < 2) unit.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Vulnerable,3);
             unit.bufListDetail.AddBuf(new BattleUnitBuf_EarsplittingResonance_md5488(count > 1));
+        }
+
+        public override bool IsValidTarget(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
+        {
+            return targetUnit.GetActiveBuff<BattleUnitBuf_WhiteNoiseBuff_md5488>().stack > 2;
         }
     }
 }

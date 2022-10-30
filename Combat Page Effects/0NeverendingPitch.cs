@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using BigDLL4221.Extensions;
+using System.Collections.Generic;
 using System.Linq;
 using TheWhiteNoiseProject.Buffs;
 
@@ -29,6 +30,10 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
             }
 
             if (!foreachEntry) unit.bufListDetail.AddBuf(new BattleUnitBuf_NeverendingPitch_md5488());
+        }
+        public override bool IsValidTarget(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
+        {
+            return targetUnit.GetActiveBuff<BattleUnitBuf_WhiteNoiseBuff_md5488>().stack > 2;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using BigDLL4221.Extensions;
+using System.Linq;
 using TheWhiteNoiseProject.Buffs;
 
 namespace TheWhiteNoiseProject.Combat_Page_Effects
@@ -23,6 +24,10 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
                 unit.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Weak, 2);
             }
             else unit.bufListDetail.RemoveBufAll(KeywordBuf.Strength);
+        }
+        public override bool IsValidTarget(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
+        {
+            return targetUnit.GetActiveBuff<BattleUnitBuf_WhiteNoiseBuff_md5488>().stack > 2;
         }
     }
 }
