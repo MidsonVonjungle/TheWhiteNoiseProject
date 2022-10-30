@@ -8,7 +8,7 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
         private const int Check = 2;
 
         public static string Desc =
-            "[On Use] : If [White Noise] stacks on the opponent is 2 or higher, all dice on this page gain +2 Power";
+            "[On Use] If [White Noise] stacks on the opponent is 2 or higher, all dice on this page gain +2 Power";
 
         public override void OnUseCard()
         {
