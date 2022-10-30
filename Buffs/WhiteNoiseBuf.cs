@@ -6,8 +6,10 @@ namespace TheWhiteNoiseProject.Buffs
     public class BattleUnitBuf_WhiteNoiseBuff_md5488 : BattleUnitBuf_BaseBufWithTitle_DLL4221
     {
         public override string BufName => "White Noise";
-        public override string bufActivatedText => "White Noise Effect";
-        protected override string keywordId => "BlackSilenceSpecial";
+
+        public override string bufActivatedText =>
+            "With 3 stacks of White Noise, a special page can be played against this character to inflict an unique ailment on them";
+
         protected override string keywordIconId => "WhiteNoise_md5488";
 
         public override void OnAddBuf(int addedStack)
