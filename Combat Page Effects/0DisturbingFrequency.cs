@@ -5,7 +5,7 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
 {
     public class DiceCardSelfAbility_DisturbingFrequency_md5488 : DiceCardSelfAbilityBase
     {
-        public static string Desc = "[Start of Clash] Reduce Power of all target's dice by 1";
+        public static string Desc = "Inflict 2 Disarm and lower the *min* roll of all defensive die by 2 against The White Noise.\n\n[Intensify] If the opponent has 4 or more Endured, purge all its stacks instead.";
 
         public override void OnUseInstance(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
         {

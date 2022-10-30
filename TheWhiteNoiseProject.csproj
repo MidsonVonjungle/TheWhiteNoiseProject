@@ -70,10 +70,10 @@
     <Compile Include="Buffs\NeverendingPitch.cs" />
     <Compile Include="Buffs\TempCardBuff.cs" />
     <Compile Include="Buffs\WhiteNoiseBuf.cs" />
-    <Compile Include="Combat Page Effects\CripplingPitch.cs" />
-    <Compile Include="Combat Page Effects\DisturbingFrequency.cs" />
-    <Compile Include="Combat Page Effects\EarsplittingResonance.cs" />
-    <Compile Include="Combat Page Effects\NeverendingPitch.cs" />
+    <Compile Include="Combat Page Effects\0CripplingPitch.cs" />
+    <Compile Include="Combat Page Effects\0DisturbingFrequency.cs" />
+    <Compile Include="Combat Page Effects\0EarsplittingResonance.cs" />
+    <Compile Include="Combat Page Effects\0NeverendingPitch.cs" />
     <Compile Include="Combat Page Effects\WhiteNoiseBaseCard.cs" />
     <Compile Include="Combat Page Effects\Durandal.cs" />
     <Compile Include="Combat Page Effects\FuriosoCardAbility.cs" />

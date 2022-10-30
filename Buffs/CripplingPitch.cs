@@ -11,12 +11,12 @@ namespace TheWhiteNoiseProject.Buffs
             stack = 0;
         }
 
-        public override string BufName => "White Noise";
+        public override string BufName => "Crippling Pitch";
 
         public override string bufActivatedText =>
-            "With 3 stacks of White Noise, a special page can be played against this character to inflict an unique ailment on them";
+            "Inflict 2 Feeble and lower the *max* roll of all offensive die by 2 against The White Noise. If the opponent has 4 or more Strength, purge all its stacks instead.";
 
-        protected override string keywordIconId => "WhiteNoise_md5488";
+        protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;
 
 

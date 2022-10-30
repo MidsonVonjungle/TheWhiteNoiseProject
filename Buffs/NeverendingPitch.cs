@@ -18,12 +18,12 @@ namespace TheWhiteNoiseProject.Buffs
             stack = 0;
         }
 
-        public override string BufName => "White Noise";
+        public override string BufName => "Neverending Pitch";
 
         public override string bufActivatedText =>
-            "With 3 stacks of White Noise, a special page can be played against this character to inflict an unique ailment on them";
+            "If the opponent has Feeble, Disarm, Paralysis and/or Fragile, transfer half of the stacks of every ailment the next turn. If the opponent has no Feeble, Disarm, Fragile or Paralysis, inflict one of these ailments on hit at a 15% chance.";
 
-        protected override string keywordIconId => "WhiteNoise_md5488";
+        protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;
 
         public override void Init(BattleUnitModel owner)

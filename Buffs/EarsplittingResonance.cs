@@ -14,12 +14,12 @@ namespace TheWhiteNoiseProject.Buffs
             _intesify = intesify;
         }
 
-        public override string BufName => "White Noise";
+        public override string BufName => "Earsplitting Pitch";
 
         public override string bufActivatedText =>
-            "With 3 stacks of White Noise, a special page can be played against this character to inflict an unique ailment on them";
+            "Inflict 3 Fragile and take 2~3 Bonus damage whenever The White Noise Damages this opponent. If the opponent has two or more Endured and/or Ineffective health defenses, whenever this character is Hit by an offensive die, they take damage equal to the half of the natural roll of that die instead. ";
 
-        protected override string keywordIconId => "WhiteNoise_md5488";
+        protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;
 
 

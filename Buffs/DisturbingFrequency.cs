@@ -12,12 +12,12 @@ namespace TheWhiteNoiseProject.Buffs
             stack = 0;
         }
 
-        public override string BufName => "White Noise";
+        public override string BufName => "Disturbing Pitch";
 
         public override string bufActivatedText =>
-            "With 3 stacks of White Noise, a special page can be played against this character to inflict an unique ailment on them";
+            "Inflict 2 Disarm and lower the *min* roll of all defensive die by 2 against The White Noise.\n\n[Intensify] If the opponent has 4 or more Endured, purge all its stacks instead.";
 
-        protected override string keywordIconId => "WhiteNoise_md5488";
+        protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;
 
 
