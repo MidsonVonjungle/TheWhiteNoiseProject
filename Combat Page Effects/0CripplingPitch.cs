@@ -27,7 +27,8 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
         }
         public override bool IsValidTarget(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
         {
-            return targetUnit.GetActiveBuff<BattleUnitBuf_WhiteNoiseBuff_md5488>().stack > 2;
+            var buff = targetUnit.GetActiveBuff<BattleUnitBuf_WhiteNoiseBuff_md5488>();
+            return buff != null && buff.stack > 2;
         }
     }
 }

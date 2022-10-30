@@ -39,7 +39,7 @@
     </Reference>
     <Reference Include="BigDLL4221, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\Softwares\Real Ruina modding hours\DLL codes\BigDLL4221.dll</HintPath>
+      <HintPath>..\NewDLL\bin\Debug\BigDLL4221.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>..\CommonDLL\Mono.Cecil.dll</HintPath>
