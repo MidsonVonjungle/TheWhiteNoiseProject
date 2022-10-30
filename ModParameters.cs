@@ -15,7 +15,7 @@ namespace TheWhiteNoiseProject
 
         public static List<int> WhiteNoiseCards = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-        public static MechUtilBase WhiteNoiseUtil = new MechUtilBase(new MechUtilBaseModel(
+        public static MechUtilBase WhiteNoiseUtil = new MechUtilBase(new MechUtilBaseModel(additionalStartDraw:2,
             personalCards: new Dictionary<LorId, PersonalCardOptions>
             {
                 { new LorId(PackageId, 11), new PersonalCardOptions(onPlayCard: true) },
