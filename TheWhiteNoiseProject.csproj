@@ -76,6 +76,7 @@
     <Compile Include="Combat Page Effects\Reverse Mook Workshop.cs" />
     <Compile Include="Combat Page Effects\Reverse Zelkova Workshop.cs" />
     <Compile Include="Combat Page Effects\Wheels Industries.cs" />
+    <Compile Include="Dice Effects\HitInflictWhiteNoise.cs" />
     <Compile Include="Sprite Attack Effects\1ChainSawUp.cs" />
     <Compile Include="Sprite Attack Effects\1BlockEffect.cs" />
     <Compile Include="Sprite Attack Effects\1ChainsawDown.cs" />

@@ -4,7 +4,7 @@ namespace TheWhiteNoiseProject.Dice_Effects
 {
     public class DiceCardAbility_WhiteFurioso_md5488 : DiceCardAbilityBase
     {
-        public static string Desc = "[On Clash Win] : Destroy all of opponent's dice and inflict 3 White Noise.";
+        public static string Desc = "[On Clash Win] Destroy all of opponent's dice and inflict 3 White Noise.";
 
         public override void OnSucceedAttack()
         {
