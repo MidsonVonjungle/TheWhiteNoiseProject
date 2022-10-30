@@ -60,7 +60,11 @@ namespace TheWhiteNoiseProject
         {
             ModParameters.CardOptions.Add(WhiteNoiseModParameters.PackageId, new List<CardOptions>
             {
-                new CardOptions(10, CardOption.Personal)
+                new CardOptions(10, CardOption.Personal),
+                new CardOptions(11, CardOption.Personal),
+                new CardOptions(12, CardOption.Personal),
+                new CardOptions(13, CardOption.Personal),
+                new CardOptions(14, CardOption.Personal)
             });
         }
 
