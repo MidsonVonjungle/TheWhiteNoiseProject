@@ -17,7 +17,7 @@ namespace TheWhiteNoiseProject.Buffs
         public override string BufName => "Earsplitting Pitch";
 
         public override string bufActivatedText =>
-            _intesify ? "Take 2~3 Bonus damage whenever The White Noise Damages this opponent." : "Whenever this character is Hit by an offensive die, take damage equal to the half of the natural roll of that die. ";
+            _intesify ? "Whenever this character is Hit by an offensive die, take damage equal to the half of the natural roll of that die. " : "Take 2~3 Bonus damage whenever The White Noise Damages this opponent.";
 
         protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;
