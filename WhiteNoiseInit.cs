@@ -81,7 +81,7 @@ namespace TheWhiteNoiseProject
                             { MotionDetail.S1, new MotionSound("Chainsaw1.wav") },
                             { MotionDetail.S2, new MotionSound("Chainsaw2.wav") },
                             { MotionDetail.S3, new MotionSound("ChainsawBlock.wav") },
-                            { MotionDetail.Z, new MotionSound("Roland_DuelSword_Strong", isBaseSoundWin: true) },
+                            { MotionDetail.Z, new MotionSound("Yuzin_Special_Atk.wav", isBaseSoundWin: true) },
                             { MotionDetail.G, new MotionSound("Roland_Guard", isBaseSoundWin: true) },
                             { MotionDetail.H, new MotionSound("Roland_Mace", isBaseSoundWin: true) },
                             { MotionDetail.S4, new MotionSound("RevolverShot.ogg") },
