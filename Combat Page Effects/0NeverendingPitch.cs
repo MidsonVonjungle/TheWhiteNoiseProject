@@ -8,7 +8,7 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
     public class DiceCardSelfAbility_NeverendingPitch_md5488 : DiceCardSelfAbilityBase
     {
         public static string Desc =
-            "If the opponent has Feeble, Disarm, Paralysis and/or Fragile, transfer half of the stacks of every ailment the next turn.\n\n[Intensify] If the opponent has no Feeble, Disarm, Fragile or Paralysis, inflict one of these ailments on hit at a 15% chance.";
+            "If the opponent has Feeble, Disarm, Paralysis and/or Fragile, transfer half of the stacks of every ailment the next turn.\n\n[Intensify] If the opponent has no Feeble, Disarm, Fragile or Paralysis, inflict one of these ailments on hit at a 15% chance the next scene.";
 
         private static readonly List<KeywordBuf> Debuffs = new List<KeywordBuf>
             { KeywordBuf.Weak, KeywordBuf.Disarm, KeywordBuf.Vulnerable, KeywordBuf.Paralysis };
