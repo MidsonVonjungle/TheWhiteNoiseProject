@@ -25,6 +25,7 @@ namespace TheWhiteNoiseProject.Buffs
 
         protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;
+        public override int MaxStack => 0;
 
         public override void Init(BattleUnitModel owner)
         {

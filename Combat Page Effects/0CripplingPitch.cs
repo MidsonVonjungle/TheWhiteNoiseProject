@@ -1,27 +1,24 @@
-﻿using BigDLL4221.Extensions;
-using System.Linq;
+﻿using System.Linq;
+using BigDLL4221.Extensions;
 using TheWhiteNoiseProject.Buffs;
-using static UnityEngine.GraphicsBuffer;
 
 namespace TheWhiteNoiseProject.Combat_Page_Effects
 {
     public class DiceCardSelfAbility_CripplingPitch_md5488 : DiceCardSelfAbilityBase
     {
-        public static string Desc = "Inflict 2 Feeble and lower the *max* roll of all offensive die by 2 against The White Noise.\n\n[Intensify] If the opponent has 4 or more Strength, purge all its stacks instead.";
+        public static string Desc =
+            "Inflict 2 Feeble and lower the *max* roll of all offensive die by 2 against The White Noise.\n\n[Intensify] If the opponent has 4 or more Strength, purge all its stacks instead.";
 
         public override void OnUseInstance(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
         {
             Activate(targetUnit);
-            //self.exhaust = false;
-            unit.personalEgoDetail.RemoveCard(self.GetID());
+            self.exhaust = true;
             unit.personalEgoDetail.AddCard(self.GetID());
-
-            var battleUnitBuf = targetUnit.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_WhiteNoiseBuff_md5488);
-            targetUnit.bufListDetail.RemoveBuf(battleUnitBuf);
         }
 
         private static void Activate(BattleUnitModel unit)
         {
+            unit.GetActiveBuff<BattleUnitBuf_WhiteNoiseBuff_md5488>()?.OnAddBuf(-3);
             var strengthBuff = unit.bufListDetail.GetActivatedBufList()
                 .FirstOrDefault(x => x.bufType == KeywordBuf.Strength && !x.IsDestroyed());
             if (strengthBuff == null || strengthBuff.stack < 4)
@@ -29,12 +26,15 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
                 unit.bufListDetail.AddBuf(new BattleUnitBuf_CripplingPitch_md5488());
                 unit.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Weak, 2);
             }
-            else unit.bufListDetail.RemoveBufAll(KeywordBuf.Strength);
+            else
+            {
+                unit.bufListDetail.RemoveBufAll(KeywordBuf.Strength);
+            }
         }
+
         public override bool IsValidTarget(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
         {
-            var buff = targetUnit.GetActiveBuff<BattleUnitBuf_WhiteNoiseBuff_md5488>();
-            return buff != null && buff.stack > 2;
+            return targetUnit.GetActiveBuff<BattleUnitBuf_WhiteNoiseBuff_md5488>()?.stack > 2;
         }
     }
 }
