@@ -50,10 +50,6 @@ namespace TheWhiteNoiseProject.Buffs
                 _owner.bufListDetail.AddKeywordBufByEtc(RandomUtil.SelectOne(_debuffs), 1);
         }
 
-        public override void BeforeTakeDamage(BattleUnitModel attacker, int dmg)
-        {
-            if (attacker.GetActivePassive<PassiveAbility_TheWhiteNoise_md5488>() == null) return;
-            _owner.TakeDamage(RandomUtil.Range(2, 3));
-        }
+
     }
 }
