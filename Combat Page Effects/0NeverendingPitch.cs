@@ -15,7 +15,12 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
         public override void OnUseInstance(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
         {
             Activate(targetUnit);
-            self.exhaust = true;
+            //self.exhaust = true;
+            unit.personalEgoDetail.RemoveCard(self.GetID());
+            unit.personalEgoDetail.AddCard(self.GetID());
+
+            var battleUnitBuf = targetUnit.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_WhiteNoiseBuff_md5488);
+            targetUnit.bufListDetail.RemoveBuf(battleUnitBuf);
         }
 
         private static void Activate(BattleUnitModel unit)

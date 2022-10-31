@@ -11,7 +11,12 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
         public override void OnUseInstance(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
         {
             Activate(targetUnit);
-            self.exhaust = true;
+            //self.exhaust = true;
+            unit.personalEgoDetail.RemoveCard(self.GetID());
+            unit.personalEgoDetail.AddCard(self.GetID());
+
+            var battleUnitBuf = targetUnit.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_WhiteNoiseBuff_md5488);
+            targetUnit.bufListDetail.RemoveBuf(battleUnitBuf);
         }
 
         private static void Activate(BattleUnitModel unit)
@@ -30,7 +35,9 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
         public override bool IsValidTarget(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
         {
             var buff = targetUnit.GetActiveBuff<BattleUnitBuf_WhiteNoiseBuff_md5488>();
-            return buff != null && buff.stack > 2;
+            return buff != null && buff.stack > 4;
+            //Kamiyo, I changed the value to 4 because this card was incomplete, so I made it unselectable, once you add
+            //the intensify property, fix it back to 2
         }
     }
 }
