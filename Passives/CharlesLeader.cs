@@ -11,14 +11,14 @@ namespace TheWhiteNoiseProject.Passives
     {
         public override void OnRoundEnd()
         {
-            if (this.owner.emotionDetail.EmotionLevel < 3)
+            if (this.owner.emotionDetail.EmotionLevel < 4)
                 return;
             { this.owner.cardSlotDetail.RecoverPlayPoint(2); }
         }
         public override void BeforeRollDice(BattleDiceBehavior behavior)
         {
             int num1 = 0;
-            if (this.owner.emotionDetail.EmotionLevel >= 3)
+            if (this.owner.emotionDetail.EmotionLevel >= 4)
                 num1 = 2;
             behavior.ApplyDiceStatBonus(new DiceStatBonus()
             {
