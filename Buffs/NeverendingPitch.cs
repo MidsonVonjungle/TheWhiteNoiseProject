@@ -41,13 +41,13 @@ namespace TheWhiteNoiseProject.Buffs
         public override void OnStartTargetedOneSide(BattlePlayingCardDataInUnitModel attackerCard)
         {
             if (_random.Next(0, 100) <= 15)
-                _owner.bufListDetail.AddKeywordBufThisRoundByEtc(RandomUtil.SelectOne(_debuffs), 1);
+                _owner.bufListDetail.AddKeywordBufByEtc(RandomUtil.SelectOne(_debuffs), 1);
         }
 
         public override void OnLoseParrying(BattleDiceBehavior behavior)
         {
             if (_random.Next(0, 100) <= 15)
-                _owner.bufListDetail.AddKeywordBufThisRoundByEtc(RandomUtil.SelectOne(_debuffs), 1);
+                _owner.bufListDetail.AddKeywordBufByEtc(RandomUtil.SelectOne(_debuffs), 1);
         }
 
         public override void BeforeTakeDamage(BattleUnitModel attacker, int dmg)

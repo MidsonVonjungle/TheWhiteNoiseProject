@@ -32,7 +32,7 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
                 buff.stack /= 2;
             }
 
-            if (!foreachEntry) unit.bufListDetail.AddReadyBuf(new BattleUnitBuf_NeverendingPitch_md5488());
+            if (!foreachEntry) unit.bufListDetail.AddBuf(new BattleUnitBuf_NeverendingPitch_md5488());
         }
 
         public override bool IsValidTarget(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
