@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TheWhiteNoiseProject.Passives
 {
-    public class PassiveAbility_Charles_Leader_md5488 : PassiveAbility_PlayerMechBase_DLL4221
+    public class PassiveAbility_Charles_Leader_md5488 : PassiveAbilityBase
     {
         public override void OnRoundEnd()
         {
