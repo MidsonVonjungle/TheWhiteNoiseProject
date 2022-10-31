@@ -13,7 +13,7 @@ namespace TheWhiteNoiseProject.Passives
         {
             if (this.owner.emotionDetail.EmotionLevel < 4)
                 return;
-            { this.owner.cardSlotDetail.RecoverPlayPoint(2); }
+            { this.owner.cardSlotDetail.RecoverPlayPoint(1); }
         }
         public override void BeforeRollDice(BattleDiceBehavior behavior)
         {
