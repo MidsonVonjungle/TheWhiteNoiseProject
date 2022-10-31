@@ -12,7 +12,7 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
         public override void OnUseInstance(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
         {
             Activate(targetUnit);
-            self.exhaust = true;
+            unit.personalEgoDetail.RemoveCard(self.GetID());
             unit.personalEgoDetail.AddCard(self.GetID());
         }
 

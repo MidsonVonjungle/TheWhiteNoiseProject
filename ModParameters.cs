@@ -18,10 +18,10 @@ namespace TheWhiteNoiseProject
         public static MechUtilBase WhiteNoiseUtil = new MechUtilBase(new MechUtilBaseModel(additionalStartDraw: 2,
             personalCards: new Dictionary<LorId, PersonalCardOptions>
             {
-                { new LorId(PackageId, 11), new PersonalCardOptions(onPlayCard: true) },
-                { new LorId(PackageId, 12), new PersonalCardOptions(onPlayCard: true) },
-                { new LorId(PackageId, 13), new PersonalCardOptions(onPlayCard: true) },
-                { new LorId(PackageId, 14), new PersonalCardOptions(onPlayCard: true) }
+                { new LorId(PackageId, 11), new PersonalCardOptions() },
+                { new LorId(PackageId, 12), new PersonalCardOptions() },
+                { new LorId(PackageId, 13), new PersonalCardOptions() },
+                { new LorId(PackageId, 14), new PersonalCardOptions() }
             }));
     }
 }
