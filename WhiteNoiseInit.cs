@@ -72,7 +72,10 @@ namespace TheWhiteNoiseProject
         {
             ModParameters.PassiveOptions.Add(WhiteNoiseModParameters.PackageId, new List<PassiveOptions>
             {
-                new PassiveOptions(1)
+                new PassiveOptions(1,false),
+                new PassiveOptions(2,false),
+                new PassiveOptions(3,false),
+                new PassiveOptions(4,cannotBeUsedWithPassives:new List<LorId>{new LorId(260004) })
             });
         }
 
