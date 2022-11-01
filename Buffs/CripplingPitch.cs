@@ -4,7 +4,7 @@ using TheWhiteNoiseProject.Passives;
 
 namespace TheWhiteNoiseProject.Buffs
 {
-    public class BattleUnitBuf_CripplingPitch_md5488 : BattleUnitBuf_BaseBufWithTitle_DLL4221
+    public class BattleUnitBuf_CripplingPitch_md5488 : BattleUnitBuf_BaseBufChanged_DLL4221
     {
         public BattleUnitBuf_CripplingPitch_md5488()
         {
@@ -19,11 +19,6 @@ namespace TheWhiteNoiseProject.Buffs
         protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;
         public override int MaxStack => 0;
-
-        public override void OnRoundEnd()
-        {
-            _owner.bufListDetail.RemoveBuf(this);
-        }
 
         public override void BeforeRollDice(BattleDiceBehavior behavior)
         {

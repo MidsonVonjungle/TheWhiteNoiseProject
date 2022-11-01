@@ -2,8 +2,12 @@
 
 namespace TheWhiteNoiseProject.Buffs
 {
-    public class BattleUnitBuf_WhiteNoiseBuff_md5488 : BattleUnitBuf_BaseBufWithTitle_DLL4221
+    public class BattleUnitBuf_WhiteNoiseBuff_md5488 : BattleUnitBuf_BaseBufChanged_DLL4221
     {
+        public BattleUnitBuf_WhiteNoiseBuff_md5488() : base(infinite: true)
+        {
+        }
+
         public override string BufName => "White Noise";
 
         public override string bufActivatedText =>

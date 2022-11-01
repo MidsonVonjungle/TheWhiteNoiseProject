@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using BigDLL4221.Buffs;
-using BigDLL4221.Extensions;
-using TheWhiteNoiseProject.Passives;
 
 namespace TheWhiteNoiseProject.Buffs
 {
-    public class BattleUnitBuf_NeverendingPitch_md5488 : BattleUnitBuf_BaseBufWithTitle_DLL4221
+    public class BattleUnitBuf_NeverendingPitch_md5488 : BattleUnitBuf_BaseBufChanged_DLL4221
     {
         private readonly List<KeywordBuf> _debuffs = new List<KeywordBuf>
             { KeywordBuf.Weak, KeywordBuf.Disarm, KeywordBuf.Vulnerable, KeywordBuf.Paralysis };
@@ -33,11 +31,6 @@ namespace TheWhiteNoiseProject.Buffs
             _random = new Random();
         }
 
-        public override void OnRoundEnd()
-        {
-            _owner.bufListDetail.RemoveBuf(this);
-        }
-
         public override void OnStartTargetedOneSide(BattlePlayingCardDataInUnitModel attackerCard)
         {
             if (_random.Next(0, 100) <= 15)
@@ -49,7 +42,5 @@ namespace TheWhiteNoiseProject.Buffs
             if (_random.Next(0, 100) <= 15)
                 _owner.bufListDetail.AddKeywordBufByEtc(RandomUtil.SelectOne(_debuffs), 1);
         }
-
-
     }
 }

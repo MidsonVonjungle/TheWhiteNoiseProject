@@ -4,7 +4,7 @@ using TheWhiteNoiseProject.Passives;
 
 namespace TheWhiteNoiseProject.Buffs
 {
-    public class BattleUnitBuf_EarsplittingResonance_md5488 : BattleUnitBuf_BaseBufWithTitle_DLL4221
+    public class BattleUnitBuf_EarsplittingResonance_md5488 : BattleUnitBuf_BaseBufChanged_DLL4221
     {
         private readonly bool _intesify;
 
@@ -25,11 +25,6 @@ namespace TheWhiteNoiseProject.Buffs
         public override int paramInBufDesc => 0;
 
         public override int MaxStack => 0;
-
-        public override void OnRoundEnd()
-        {
-            _owner.bufListDetail.RemoveBuf(this);
-        }
 
         public override void BeforeTakeDamage(BattleUnitModel attacker, int dmg)
         {
