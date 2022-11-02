@@ -53,7 +53,13 @@ namespace TheWhiteNoiseProject
         private static void OnInitRewards()
         {
             ModParameters.StartUpRewardOptions.Add(new RewardOptions(null, null,
-                new List<LorId> { new LorId(WhiteNoiseModParameters.PackageId, 10000001) }));
+                new List<LorId> { new LorId(WhiteNoiseModParameters.PackageId, 10000001)}
+                ));
+            
+            ModParameters.StartUpRewardOptions.Add(new RewardOptions(new Dictionary<LorId, int>
+            {
+                { new LorId(WhiteNoiseModParameters.PackageId, 1), 0 }
+            }));
         }
 
         private static void OnInitCards()
@@ -84,7 +90,9 @@ namespace TheWhiteNoiseProject
             ModParameters.KeypageOptions.Add(WhiteNoiseModParameters.PackageId, new List<KeypageOptions>
             {
                 new KeypageOptions(10000001, isDeckFixed: true, everyoneCanEquip: true,
-                    bookCustomOptions: new BookCustomOptions("Roland"))
+                    bookCustomOptions: new BookCustomOptions("Roland")),
+                
+                new KeypageOptions(10000002, isDeckFixed: true)
             });
         }
 
