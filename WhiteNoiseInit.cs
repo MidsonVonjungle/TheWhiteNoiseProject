@@ -46,7 +46,8 @@ namespace TheWhiteNoiseProject
         {
             ModParameters.SpriteOptions.Add(WhiteNoiseModParameters.PackageId, new List<SpriteOptions>
             {
-                new SpriteOptions(SpriteEnum.Custom, 10000001, "WhiteNoiseDefault_md5488")
+                new SpriteOptions(SpriteEnum.Custom, 10000001, "WhiteNoiseDefault_md5488"),
+                new SpriteOptions(SpriteEnum.Custom, 10000002, "WhiteNoiseDefault_md5488")
             });
         }
 
