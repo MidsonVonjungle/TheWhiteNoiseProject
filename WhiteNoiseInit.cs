@@ -53,14 +53,12 @@ namespace TheWhiteNoiseProject
 
         private static void OnInitRewards()
         {
-            ModParameters.StartUpRewardOptions.Add(new RewardOptions(null, null,
+            ModParameters.StartUpRewardOptions.Add(new RewardOptions(new Dictionary<LorId, int>
+                {
+                    //{ new LorId(WhiteNoiseModParameters.PackageId, 1), 0 } Commented for now until I get the headless skin
+                }, null,
                 new List<LorId> { new LorId(WhiteNoiseModParameters.PackageId, 10000001)}
                 ));
-            
-            ModParameters.StartUpRewardOptions.Add(new RewardOptions(new Dictionary<LorId, int>
-            {
-                //{ new LorId(WhiteNoiseModParameters.PackageId, 1), 0 } Commented for now until I get the headless skin
-            }));
         }
 
         private static void OnInitCards()
