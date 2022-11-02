@@ -9,6 +9,10 @@
             owner.allyCardDetail.DrawCards(1);
             base.OnUseCard();
         }
-        public override bool IsFixedCost() => true;
+
+        public override bool IsFixedCost()
+        {
+            return true;
+        }
     }
 }

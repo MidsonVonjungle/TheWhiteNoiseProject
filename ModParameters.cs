@@ -14,14 +14,17 @@ namespace TheWhiteNoiseProject
             { 702001, 702002, 702003, 702004, 702005, 702006, 702007, 702008, 702009 };
 
         public static List<int> WhiteNoiseCards = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    }
 
-        public static MechUtilBase WhiteNoiseUtil = new MechUtilBase(new MechUtilBaseModel(additionalStartDraw: 2,
+    public class WhiteNoiseUtil
+    {
+        public MechUtilBase Util = new MechUtilBase(new MechUtilBaseModel(additionalStartDraw: 2,
             personalCards: new Dictionary<LorId, PersonalCardOptions>
             {
-                { new LorId(PackageId, 11), new PersonalCardOptions() },
-                { new LorId(PackageId, 12), new PersonalCardOptions() },
-                { new LorId(PackageId, 13), new PersonalCardOptions() },
-                { new LorId(PackageId, 14), new PersonalCardOptions() }
+                { new LorId(WhiteNoiseModParameters.PackageId, 11), new PersonalCardOptions() },
+                { new LorId(WhiteNoiseModParameters.PackageId, 12), new PersonalCardOptions() },
+                { new LorId(WhiteNoiseModParameters.PackageId, 13), new PersonalCardOptions() },
+                { new LorId(WhiteNoiseModParameters.PackageId, 14), new PersonalCardOptions() }
             }));
     }
 }

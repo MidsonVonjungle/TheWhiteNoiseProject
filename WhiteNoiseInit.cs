@@ -57,8 +57,8 @@ namespace TheWhiteNoiseProject
                 {
                     //{ new LorId(WhiteNoiseModParameters.PackageId, 1), 0 } Commented for now until I get the headless skin
                 }, null,
-                new List<LorId> { new LorId(WhiteNoiseModParameters.PackageId, 10000001)}
-                ));
+                new List<LorId> { new LorId(WhiteNoiseModParameters.PackageId, 10000001) }
+            ));
         }
 
         private static void OnInitCards()
@@ -77,10 +77,10 @@ namespace TheWhiteNoiseProject
         {
             ModParameters.PassiveOptions.Add(WhiteNoiseModParameters.PackageId, new List<PassiveOptions>
             {
-                new PassiveOptions(1,false),
-                new PassiveOptions(2,false),
-                new PassiveOptions(3,false),
-                new PassiveOptions(4,cannotBeUsedWithPassives:new List<LorId>{new LorId(260004) })
+                new PassiveOptions(1, false),
+                new PassiveOptions(2, false),
+                new PassiveOptions(3, false),
+                new PassiveOptions(4, cannotBeUsedWithPassives: new List<LorId> { new LorId(260004) })
             });
         }
 
@@ -90,7 +90,7 @@ namespace TheWhiteNoiseProject
             {
                 new KeypageOptions(10000001, isDeckFixed: true, everyoneCanEquip: true,
                     bookCustomOptions: new BookCustomOptions("Roland")),
-                
+
                 new KeypageOptions(10000002, isDeckFixed: true)
             });
         }

@@ -6,7 +6,7 @@ namespace TheWhiteNoiseProject.Passives
     {
         public override void OnWaveStart()
         {
-            SetUtil(WhiteNoiseModParameters.WhiteNoiseUtil);
+            SetUtil(new WhiteNoiseUtil().Util);
             base.OnWaveStart();
         }
     }
