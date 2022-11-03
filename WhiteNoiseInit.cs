@@ -95,7 +95,8 @@ namespace TheWhiteNoiseProject
                 new PassiveOptions(1, false, passiveColorOptions: new PassiveColorOptions(Color.white, Color.white)),
                 new PassiveOptions(2, false),
                 new PassiveOptions(3, false),
-                new PassiveOptions(4, cannotBeUsedWithPassives: new List<LorId> { new LorId(260004) })
+                new PassiveOptions(4, cannotBeUsedWithPassives: new List<LorId> { new LorId(260004) }),
+                new PassiveOptions(5, false)
             });
         }
 

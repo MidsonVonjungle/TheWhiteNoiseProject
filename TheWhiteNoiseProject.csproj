@@ -87,6 +87,7 @@
     <Compile Include="Combat Page Effects\Wheels Industries.cs" />
     <Compile Include="Dice Effects\HitInflictWhiteNoise.cs" />
     <Compile Include="Passives\CharlesLeader.cs" />
+    <Compile Include="Passives\Perfect Replica_The White Noise.cs" />
     <Compile Include="Sprite Attack Effects\1ChainSawUp.cs" />
     <Compile Include="Sprite Attack Effects\1BlockEffect.cs" />
     <Compile Include="Sprite Attack Effects\1ChainsawDown.cs" />
