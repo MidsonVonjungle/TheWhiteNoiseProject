@@ -7,6 +7,7 @@ using BigDLL4221.Models;
 using BigDLL4221.Utils;
 using LOR_DiceSystem;
 using MonoMod.Utils;
+using UnityEngine;
 
 namespace TheWhiteNoiseProject
 {
@@ -65,11 +66,25 @@ namespace TheWhiteNoiseProject
         {
             ModParameters.CardOptions.Add(WhiteNoiseModParameters.PackageId, new List<CardOptions>
             {
-                new CardOptions(10, CardOption.Personal),
-                new CardOptions(11, CardOption.Personal),
-                new CardOptions(12, CardOption.Personal),
-                new CardOptions(13, CardOption.Personal),
-                new CardOptions(14, CardOption.Personal)
+                new CardOptions(1, cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(2, cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(3, cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(4, cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(5, cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(6, cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(7, cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(8, cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(9, cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(10, CardOption.Personal,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(11, CardOption.Personal,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(12, CardOption.Personal,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(13, CardOption.Personal,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(14, CardOption.Personal,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White))
             });
         }
 
@@ -77,7 +92,7 @@ namespace TheWhiteNoiseProject
         {
             ModParameters.PassiveOptions.Add(WhiteNoiseModParameters.PackageId, new List<PassiveOptions>
             {
-                new PassiveOptions(1, false),
+                new PassiveOptions(1, false, passiveColorOptions: new PassiveColorOptions(Color.white, Color.white)),
                 new PassiveOptions(2, false),
                 new PassiveOptions(3, false),
                 new PassiveOptions(4, cannotBeUsedWithPassives: new List<LorId> { new LorId(260004) })
