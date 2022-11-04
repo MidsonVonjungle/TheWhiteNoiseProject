@@ -56,7 +56,7 @@ namespace TheWhiteNoiseProject
         {
             ModParameters.StartUpRewardOptions.Add(new RewardOptions(new Dictionary<LorId, int>
                 {
-                    //{ new LorId(WhiteNoiseModParameters.PackageId, 1), 0 } Commented for now until I get the headless skin
+                    { new LorId(WhiteNoiseModParameters.PackageId, 1), 0 }
                 }, null,
                 new List<LorId> { new LorId(WhiteNoiseModParameters.PackageId, 10000001) }
             ));
