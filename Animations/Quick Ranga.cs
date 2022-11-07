@@ -48,7 +48,7 @@ namespace TheWhiteNoiseProject.Animations
             var movingAction1 = new RencounterManager.MovingAction(ActionDetail.S8, CharMoveState.Custom,
                 updateDir: false, delay: 0.2f);
             movingAction1.SetCustomMoving(MoveGauntlet1);
-            movingAction1.customEffectRes = "BlackSilence_Gauntlet1";
+            movingAction1.customEffectRes = "WolvSlash1_md5488";
             movingAction1.SetEffectTiming(EffectTiming.PRE, EffectTiming.NONE, EffectTiming.WITHOUT_DMGTEXT);
             var movingAction2 = new RencounterManager.MovingAction(ActionDetail.S9, CharMoveState.Custom,
                 updateDir: false, delay: 0.2f);
