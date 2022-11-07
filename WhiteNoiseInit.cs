@@ -105,7 +105,7 @@ namespace TheWhiteNoiseProject
             ModParameters.KeypageOptions.Add(WhiteNoiseModParameters.PackageId, new List<KeypageOptions>
             {
                 new KeypageOptions(10000001, isDeckFixed: true, everyoneCanEquip: true,
-                    bookCustomOptions: new BookCustomOptions("The White Noise"),
+                    bookCustomOptions: new BookCustomOptions("Roland"),
                     keypageColorOptions: new KeypageColorOptions(Color.white, Color.white)),
 
                 new KeypageOptions(10000002, isDeckFixed: true)
