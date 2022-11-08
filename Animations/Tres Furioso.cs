@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class BehaviourAction_BlackSilence_SpecialDurandal : BehaviourActionBase
+public class BehaviourAction_WhiteNoise_SpecialDurandal : BehaviourActionBase
 {
     private BattleUnitModel _target;
     private bool _bMovedLance;
