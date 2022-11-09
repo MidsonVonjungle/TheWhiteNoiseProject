@@ -4,13 +4,13 @@
     {
         public override void OnRoundEnd()
         {
-            if (owner.emotionDetail.EmotionLevel < 4) return;
+            if (owner.emotionDetail.EmotionLevel < 3) return;
             owner.cardSlotDetail.RecoverPlayPoint(1);
         }
 
         public override void BeforeRollDice(BattleDiceBehavior behavior)
         {
-            if (owner.emotionDetail.EmotionLevel < 4) return;
+            if (owner.emotionDetail.EmotionLevel < 3) return;
             behavior.ApplyDiceStatBonus(new DiceStatBonus
             {
                 min = 2
