@@ -73,7 +73,7 @@ namespace TheWhiteNoiseProject.Animations
                 updateDir: false, delay: 0.5f);
             movingAction1.SetCustomMoving(MoveShortSword);
             movingAction1.customEffectRes = "FX_PC_RolRang_Dagger";
-            movingAction1.SetEffectTiming(EffectTiming.PRE, EffectTiming.NONE, EffectTiming.WITHOUT_DMGTEXT);
+            movingAction1.SetEffectTiming(EffectTiming.PRE, EffectTiming.NONE, EffectTiming.PRE);
             self.Add(movingAction1);
             var movingAction2 =
                 new RencounterManager.MovingAction(ActionDetail.Damaged, CharMoveState.Stop, delay: 0.5f);
