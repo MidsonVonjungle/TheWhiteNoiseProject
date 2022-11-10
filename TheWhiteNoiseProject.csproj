@@ -66,6 +66,7 @@
     <Compile Include="Animations\dawnActionEdited.cs" />
     <Compile Include="Animations\Quick Ranga.cs" />
     <Compile Include="Animations\ShortSword_md5488.cs" />
+    <Compile Include="Animations\StigmaAnimation.cs" />
     <Compile Include="Animations\Tres Furioso.cs" />
     <Compile Include="Buffs\CardIconBuff.cs" />
     <Compile Include="Buffs\CripplingPitch.cs" />
