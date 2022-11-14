@@ -6,7 +6,7 @@ namespace TheWhiteNoiseProject.Sprite_Attack_Effects
     {
         public override void Initialize(BattleUnitView self, BattleUnitView target, float destroyTime)
         {
-            SetParameters(WhiteNoiseModParameters.Path, 0.6f, 0.3f);
+            SetParameters(WhiteNoiseModParameters.Path, 0.6f, 0.3f, duration: 0.3f);
             base.Initialize(self, target, destroyTime);
         }
     }
