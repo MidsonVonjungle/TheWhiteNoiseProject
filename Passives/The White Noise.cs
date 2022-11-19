@@ -6,6 +6,7 @@ namespace TheWhiteNoiseProject.Passives
     public class PassiveAbility_TheWhiteNoise_md5488 : PassiveAbilityBase
     {
         private readonly List<LorId> _usedCount = new List<LorId>();
+        private BattleDialogueModel _dlg;
 
         public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
         {
@@ -18,6 +19,10 @@ namespace TheWhiteNoiseProject.Passives
         public override void OnWaveStart()
         {
             owner.personalEgoDetail.AddCard(WhiteNoiseModParameters.FuriosoCard);
+            if (owner.Book.BookId != new LorId(WhiteNoiseModParameters.PackageId, 10000001)) return;
+            _dlg = owner.UnitData.unitData.battleDialogModel;
+            owner.UnitData.unitData.InitBattleDialogByDefaultBook(
+                new LorId(WhiteNoiseModParameters.PackageId, 10000001));
         }
 
         public override void OnRoundStart()
@@ -46,6 +51,11 @@ namespace TheWhiteNoiseProject.Passives
         public void ResetUsedCount()
         {
             _usedCount.Clear();
+        }
+
+        public override void OnBattleEnd()
+        {
+            if (_dlg != null) owner.UnitData.unitData.battleDialogModel = _dlg;
         }
     }
 }
