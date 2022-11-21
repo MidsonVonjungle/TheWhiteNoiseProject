@@ -176,7 +176,7 @@ namespace TheWhiteNoiseProject
         private static void OnInitCredenza()
         {
             ModParameters.CredenzaOptions.Add(WhiteNoiseModParameters.PackageId,
-                new CredenzaOptions(baseIconSpriteId: "Chapter1", credenzaName: "The White Noise",bookDataColor:new CredenzaColorOptions(Color.white,Color.white)));
+                new CredenzaOptions(customIconSpriteId: "White_Noise_Icon_md5488", credenzaName: "The White Noise",bookDataColor:new CredenzaColorOptions(Color.white,Color.white)));
         }
     }
 }
