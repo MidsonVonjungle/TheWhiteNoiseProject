@@ -147,7 +147,8 @@ namespace TheWhiteNoiseProject
                             { MotionDetail.S14, new MotionSound("StigmaDual.wav") },
                             { MotionDetail.S8, new MotionSound("Wedge_Stab.wav") },
                             { MotionDetail.S9, new MotionSound("Wedge_Stab.wav") },
-                            { MotionDetail.S10, new MotionSound("Roland_ShortSword.wav") }
+                            { MotionDetail.S10, new MotionSound("Roland_ShortSword.wav") },
+                            { MotionDetail.S15, new MotionSound("Roland_Duralandal_Stong", isBaseSoundWin: true) },
                         })
                 },
 
@@ -170,7 +171,11 @@ namespace TheWhiteNoiseProject
                             { MotionDetail.S12, new MotionSound("Blue_Argalria_Strong_Atk2", isBaseSoundWin: true) },
                             { MotionDetail.S13, new MotionSound("StigmaMace.wav") },
                             { MotionDetail.J, new MotionSound("StigmaAxe.wav") },
-                            { MotionDetail.S14, new MotionSound("StigmaDual.wav") }
+                            { MotionDetail.S14, new MotionSound("StigmaDual.wav") },
+                            { MotionDetail.S8, new MotionSound("Wedge_Stab.wav") },
+                            { MotionDetail.S9, new MotionSound("Wedge_Stab.wav") },
+                            { MotionDetail.S10, new MotionSound("Roland_ShortSword.wav") },
+                            { MotionDetail.S15, new MotionSound("Roland_Duralandal_Stong", isBaseSoundWin: true) },
                         })
                 }
             });
