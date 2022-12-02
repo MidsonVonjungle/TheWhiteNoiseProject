@@ -6,8 +6,8 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
 {
     public class DiceCardSelfAbility_EarsplittingResonance_md5488 : DiceCardSelfAbilityBase
     {
-        public static string Desc =
-            "Inflict 3 Fragile and take 2~3 Bonus damage whenever The White Noise Damages this opponent.\n\n [Intensify] If the opponent has two or more Endured and/or Ineffective health defenses, whenever this character is Hit by an offensive die, they take damage equal to the half of the natural roll of that die instead.";
+       // public static string Desc =
+          //  "Inflict 3 Fragile and take 2~3 Bonus damage whenever The White Noise Damages this opponent.\n\n [Intensify] If the opponent has two or more Endured and/or Ineffective health defenses, whenever this character is Hit by an offensive die, they take damage equal to the half of the natural roll of that die instead.";
 
         public override void OnUseInstance(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
         {

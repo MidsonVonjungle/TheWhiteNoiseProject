@@ -6,8 +6,8 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
 {
     public class DiceCardSelfAbility_CripplingPitch_md5488 : DiceCardSelfAbilityBase
     {
-        public static string Desc =
-            "Inflict 2 Feeble and lower the *max* roll of all offensive die by 2 against The White Noise.\n\n[Intensify] If the opponent has 4 or more Strength, purge all its stacks instead.";
+       // public static string Desc =
+            //"Inflict 2 Feeble and lower the *max* roll of all offensive die by 2 against The White Noise.\n\n[Intensify] If the opponent has 4 or more Strength, purge all its stacks instead.";
 
         public override void OnUseInstance(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
         {

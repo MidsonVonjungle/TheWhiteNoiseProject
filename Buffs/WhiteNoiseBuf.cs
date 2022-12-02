@@ -10,8 +10,8 @@ namespace TheWhiteNoiseProject.Buffs
 
         public override string BufName => "White Noise";
 
-        public override string bufActivatedText =>
-            "With 3 stacks of White Noise, a special page can be played against this character to inflict an unique ailment on them";
+   //     public override string bufActivatedText =>
+   //         "With 3 stacks of White Noise, a special page can be played against this character to inflict an unique ailment on them";
 
         protected override string keywordIconId => "WhiteNoise_md5488";
         public override int MaxStack => 3;

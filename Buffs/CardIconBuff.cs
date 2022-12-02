@@ -15,7 +15,7 @@ namespace TheWhiteNoiseProject.Buffs
         }
 
         public override string BufName => "Furioso";
-        public override string bufActivatedText => $"Number of the White Noise's Combat Pages used : {stack}";
+      //  public override string bufActivatedText => $"Number of the White Noise's Combat Pages used : {stack}";
         protected override string keywordIconId => "WhiteNoiseCard_md5488";
     }
 }

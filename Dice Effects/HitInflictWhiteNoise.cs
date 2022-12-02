@@ -4,7 +4,7 @@ namespace TheWhiteNoiseProject.Dice_Effects
 {
     public class DiceCardAbility_HitInflictNoise_md5488 : DiceCardAbilityBase
     {
-        public static string Desc = "[On Hit] Inflict 1 White Noise";
+       // public static string Desc = "[On Hit] Inflict 1 White Noise";
 
         public override void OnSucceedAttack()
         {

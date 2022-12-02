@@ -4,8 +4,8 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
 {
     public class DiceCardSelfAbility_WhiteNoiseFuriosoCard_md5488 : DiceCardSelfAbilityBase
     {
-        public static string Desc =
-            "This page can be used after using all 9 Combat Pages of the [White Noise]. [On Use] Restore 5 Light and Draw 3 Cards";
+      //  public static string Desc =
+       //     "This page can be used after using all 9 Combat Pages of the [White Noise]. [On Use] Restore 5 Light and Draw 3 Cards";
 
         //public override bool OnChooseCard(BattleUnitModel owner)
         //{

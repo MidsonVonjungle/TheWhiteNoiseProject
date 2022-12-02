@@ -2,7 +2,7 @@
 {
     public class DiceCardAbility_MultiplyNatX3_md5488 : DiceCardAbilityBase
     {
-        public static string Desc = "Multiply the natural roll of this die by 3";
+      //  public static string Desc = "Multiply the natural roll of this die by 3";
 
         public override void OnRollDice()
         {
