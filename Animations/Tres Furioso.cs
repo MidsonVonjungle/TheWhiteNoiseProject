@@ -258,7 +258,7 @@ public class BehaviourAction_WhiteNoise_TresFurioso_md5488 : BehaviourActionBase
         movingAction3.SetCustomMoving(new RencounterManager.MovingAction.MoveCustomEvent(this.MoveWhiteDurandal2));
         movingAction3.customEffectRes = "FX_PC_RolRang_Slash_UP";
         movingAction3.SetEffectTiming(EffectTiming.PRE, EffectTiming.NOT_PRINT, EffectTiming.WITHOUT_DMGTEXT);
-        RencounterManager.MovingAction movingAction4 = new RencounterManager.MovingAction(ActionDetail.S7, CharMoveState.Stop, 0.0f, false, 0.5f);
+        RencounterManager.MovingAction movingAction4 = new RencounterManager.MovingAction(ActionDetail.S6, CharMoveState.Stop, 0.0f, false, 0.5f);
         movingAction4.SetEffectTiming(EffectTiming.NOT_PRINT, EffectTiming.NOT_PRINT, EffectTiming.NOT_PRINT);
         RencounterManager.MovingAction movingAction5 = new RencounterManager.MovingAction(ActionDetail.S15, CharMoveState.Stop, 0.0f, delay: 1f);
         movingAction5.customEffectRes = "FX_PC_RolRang_Slash_Last";
