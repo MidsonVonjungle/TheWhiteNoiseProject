@@ -18,8 +18,8 @@ namespace TheWhiteNoiseProject.Buffs
 
         public override string bufActivatedText =>
             _intesify
-                ? "Whenever this character is Hit by an offensive die, take damage equal to the half of the natural roll of that die. "
-                : "Take 2~3 Bonus damage whenever The White Noise Damages this opponent.";
+                ? "Whenever this character is Hit by an offensive die, take damage equal to the half of the natural roll of that die"
+                : "Take 2~3 Bonus damage whenever The White Noise Damages this opponent";
 
         protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;
@@ -37,5 +37,8 @@ namespace TheWhiteNoiseProject.Buffs
             if (!_intesify || atkDice == null) return;
             _owner.TakeDamage(atkDice.DiceVanillaValue / 2);
         }
+        protected override string keywordId => _intensify
+            ? "EarsplittingResonance1_md5488"
+            : "EarsplittingResonance2_md5488";
     }
 }
