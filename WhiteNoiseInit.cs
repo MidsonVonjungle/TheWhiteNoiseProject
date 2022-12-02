@@ -26,7 +26,7 @@ namespace TheWhiteNoiseProject
             CardUtil.InitKeywordsList(new List<Assembly> { Assembly.GetExecutingAssembly() });
             ArtUtil.InitCustomEffects(new List<Assembly> { Assembly.GetExecutingAssembly() });
             CustomMapHandler.ModResources.CacheInit.InitCustomMapFiles(Assembly.GetExecutingAssembly());
-            LocalizeUtil.AddGlobalLocalize(WhiteNoiseModParameters.PackageId);
+
         }
 
         private static void OnInitParameters()
