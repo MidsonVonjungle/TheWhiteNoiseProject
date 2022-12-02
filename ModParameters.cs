@@ -17,8 +17,13 @@ namespace TheWhiteNoiseProject
         public static List<int> WhiteNoiseCards = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         public static BattleDialogCharacter WhiteNoiseDialog = new BattleDialogCharacter{dialogTypeList = new List<BattleDialogType>
         {
-            new BattleDialogType{dialogType = DialogType.START_BATTLE,dialogList = new List<BattleDialog>{new BattleDialog{dialogContent = "..."}}}
-        }};
+            new BattleDialogType{dialogType = DialogType.START_BATTLE,dialogList = new List<BattleDialog>{new BattleDialog{dialogContent = "..."}}},
+            new BattleDialogType{dialogType = DialogType.KILLS_OPPONENT,dialogList = new List<BattleDialog>{new BattleDialog{dialogContent = "..."}}},
+            new BattleDialogType{dialogType = DialogType.COLLEAGUE_DEATH,dialogList = new List<BattleDialog>{new BattleDialog{dialogContent = "..."}}},
+            new BattleDialogType{dialogType = DialogType.BATTLE_VICTORY,dialogList = new List<BattleDialog>{new BattleDialog{dialogContent = "..."}}},
+            new BattleDialogType{dialogType = DialogType.DEATH,dialogList = new List<BattleDialog>{new BattleDialog{dialogContent = "..."}}}
+        }
+        };
     }
 
     public class WhiteNoiseUtil
