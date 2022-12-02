@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using BigDLL4221.BaseClass;
 using BigDLL4221.Models;
+using LOR_XML;
 
 namespace TheWhiteNoiseProject
 {
@@ -14,6 +15,10 @@ namespace TheWhiteNoiseProject
             { 702001, 702002, 702003, 702004, 702005, 702006, 702007, 702008, 702009 };
 
         public static List<int> WhiteNoiseCards = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        public static BattleDialogCharacter WhiteNoiseDialog = new BattleDialogCharacter{dialogTypeList = new List<BattleDialogType>
+        {
+            new BattleDialogType{dialogType = DialogType.START_BATTLE,dialogList = new List<BattleDialog>{new BattleDialog{dialogContent = "..."}}}
+        }};
     }
 
     public class WhiteNoiseUtil

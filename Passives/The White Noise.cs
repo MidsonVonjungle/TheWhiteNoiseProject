@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using TheWhiteNoiseProject.Buffs;
+using UnityEngine;
 
 namespace TheWhiteNoiseProject.Passives
 {
@@ -21,8 +22,7 @@ namespace TheWhiteNoiseProject.Passives
             owner.personalEgoDetail.AddCard(WhiteNoiseModParameters.FuriosoCard);
             if (owner.Book.BookId != new LorId(WhiteNoiseModParameters.PackageId, 10000001)) return;
             _dlg = owner.UnitData.unitData.battleDialogModel;
-            owner.UnitData.unitData.InitBattleDialogByDefaultBook(
-                new LorId(WhiteNoiseModParameters.PackageId, 10000001));
+            owner.UnitData.unitData.battleDialogModel = new BattleDialogueModel(WhiteNoiseModParameters.WhiteNoiseDialog);
         }
 
         public override void OnRoundStart()
