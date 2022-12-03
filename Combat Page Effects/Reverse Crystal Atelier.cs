@@ -21,5 +21,15 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
                 });
             base.OnUseCard();
         }
+        public override string[] Keywords
+        {
+            get
+            {
+                return new[]
+                {
+                    "WhiteNoiseBuff2_md5488"
+                };
+            }
+        }
     }
 }

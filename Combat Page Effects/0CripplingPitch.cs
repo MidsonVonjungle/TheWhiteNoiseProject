@@ -36,5 +36,15 @@ namespace TheWhiteNoiseProject.Combat_Page_Effects
         {
             return targetUnit.GetActiveBuff<BattleUnitBuf_WhiteNoiseBuff_md5488>()?.stack > 2;
         }
+        public override string[] Keywords
+        {
+            get
+            {
+                return new[]
+                {
+                    "Intensify_md5488"
+                };
+            }
+        }
     }
 }
