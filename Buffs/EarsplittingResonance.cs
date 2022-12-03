@@ -16,7 +16,7 @@ namespace TheWhiteNoiseProject.Buffs
         protected override string keywordId => _intesify
             ? "EarsplittingResonance1_md5488"
             : "EarsplittingResonance2_md5488";
-        public override string BufName => "Earsplitting Pitch";
+       // public override string BufName => "Earsplitting Pitch";
 
         protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;

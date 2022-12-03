@@ -11,7 +11,7 @@ namespace TheWhiteNoiseProject.Buffs
             stack = 0;
         }
 
-        public override string BufName => "Crippling Pitch";
+       // public override string BufName => "Crippling Pitch";
 
      //   public override string bufActivatedText =>
        //     "Lower the *max* roll of all offensive die by 2 against The White Noise";
