@@ -12,11 +12,12 @@ namespace TheWhiteNoiseProject.Buffs
             stack = 0;
         }
 
-       // public override string BufName => "Disturbing Pitch";
+        // public override string BufName => "Disturbing Pitch";
 
-    //   public override string bufActivatedText =>
-       //     "Lower the *min* roll of all defensive die by 2 against The White Noise";
+        //   public override string bufActivatedText =>
+        //     "Lower the *min* roll of all defensive die by 2 against The White Noise";
 
+        protected override string keywordId => "Disturbing_md5488";
         protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;
 

@@ -16,11 +16,12 @@ namespace TheWhiteNoiseProject.Buffs
             stack = 0;
         }
 
-       // public override string BufName => "Neverending Pitch";
+        // public override string BufName => "Neverending Pitch";
 
-    //    public override string bufActivatedText =>
-    //        "Inflict Feeble, Disarm, Fragile or Paralysis on a hit against this character at a 15% chance";
+        //    public override string bufActivatedText =>
+        //        "Inflict Feeble, Disarm, Fragile or Paralysis on a hit against this character at a 15% chance";
 
+        protected override string keywordId => "Neverending_md5488";
         protected override string keywordIconId => "WhiteNoise2_md5488";
         public override int paramInBufDesc => 0;
         public override int MaxStack => 0;
