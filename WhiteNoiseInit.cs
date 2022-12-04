@@ -22,6 +22,7 @@ namespace TheWhiteNoiseProject
             KeypageUtil.ChangeKeypageItem(BookXmlList.Instance, WhiteNoiseModParameters.PackageId);
             PassiveUtil.ChangePassiveItem(WhiteNoiseModParameters.PackageId);
             LocalizeUtil.AddGlobalLocalize(WhiteNoiseModParameters.PackageId);
+            ArtUtil.MakeCustomBook(WhiteNoiseModParameters.PackageId);
             LocalizeUtil.RemoveError();
             CardUtil.InitKeywordsList(new List<Assembly> { Assembly.GetExecutingAssembly() });
             ArtUtil.InitCustomEffects(new List<Assembly> { Assembly.GetExecutingAssembly() });
@@ -35,6 +36,7 @@ namespace TheWhiteNoiseProject
             WhiteNoiseModParameters.Path = Path.GetDirectoryName(
                 Uri.UnescapeDataString(new UriBuilder(Assembly.GetExecutingAssembly().CodeBase).Path));
             ModParameters.Path.Add(WhiteNoiseModParameters.PackageId, WhiteNoiseModParameters.Path);
+            ModParameters.Assemblies.Add(Assembly.GetExecutingAssembly());
             OnInitSprites();
             OnInitSkins();
             OnInitKeypages();
@@ -42,8 +44,15 @@ namespace TheWhiteNoiseProject
             OnInitPassives();
             OnInitRewards();
             OnInitCredenza();
+            OnInitCustomSkins();
         }
-
+        private static void OnInitCustomSkins()
+        {
+            ModParameters.CustomBookSkinsOptions.Add(WhiteNoiseModParameters.PackageId, new List<CustomBookSkinsOption>
+            {
+                new CustomBookSkinsOption("HeadlessWhiteNoise_md5488", 10000002)
+            });
+        }
         private static void OnInitSprites()
         {
             ModParameters.SpriteOptions.Add(WhiteNoiseModParameters.PackageId, new List<SpriteOptions>
