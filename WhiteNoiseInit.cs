@@ -67,26 +67,26 @@ namespace TheWhiteNoiseProject
         {
             ModParameters.CardOptions.Add(WhiteNoiseModParameters.PackageId, new List<CardOptions>
             {
-                new CardOptions(1, CardOption.NoInventory),
-               //     cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
-                new CardOptions(2, CardOption.NoInventory),
-               //     cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
-                new CardOptions(3, CardOption.NoInventory),
-               //     cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
-                new CardOptions(4, CardOption.NoInventory),
-               //     cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
-                new CardOptions(5, CardOption.NoInventory),
-               //     cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
-                new CardOptions(6, CardOption.NoInventory),
-               //    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
-                new CardOptions(7, CardOption.NoInventory),
-               //     cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
-                new CardOptions(8, CardOption.NoInventory),
-               //     cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
-                new CardOptions(9, CardOption.NoInventory),
-               //     cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
-                new CardOptions(10, CardOption.Personal),
-               //     cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(1, CardOption.NoInventory,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(2, CardOption.NoInventory,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(3, CardOption.NoInventory,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(4, CardOption.NoInventory,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(5, CardOption.NoInventory,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(6, CardOption.NoInventory,
+                   cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(7, CardOption.NoInventory,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(8, CardOption.NoInventory,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(9, CardOption.NoInventory,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
+                new CardOptions(10, CardOption.Personal,
+                    cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
                 new CardOptions(11, CardOption.Personal,
                     cardColorOptions: new CardColorOptions(Color.white, iconColor: HSVColors.White)),
                 new CardOptions(12, CardOption.Personal,
@@ -115,10 +115,10 @@ namespace TheWhiteNoiseProject
             ModParameters.KeypageOptions.Add(WhiteNoiseModParameters.PackageId, new List<KeypageOptions>
             {
                 new KeypageOptions(10000001, isDeckFixed: true, everyoneCanEquip: true,
-                    bookCustomOptions: new BookCustomOptions("Roland"),
+                    bookCustomOptions: new BookCustomOptions(nameTextId: 1),
                     keypageColorOptions: new KeypageColorOptions(Color.white, Color.white)),
 
-                new KeypageOptions(10000002, isDeckFixed: true, everyoneCanEquip: true)
+                new KeypageOptions(10000002, isDeckFixed: true, everyoneCanEquip: true, bookCustomOptions: new BookCustomOptions())
             });
         }
 
