@@ -34,7 +34,7 @@
     <Reference Include="0Harmony">
       <HintPath>F:\Softwares\Real Ruina modding hours\DLL codes\0Harmony.dll</HintPath>
     </Reference>
-    <Reference Include="1BigDLL4221, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="1BigDLL4221, Version=1.0.0.0, Culture=neutral, PublicKeyToken=899fe4babbe8c2f7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>F:\Softwares\Real Ruina modding hours\DLL codes\1BigDLL4221.dll</HintPath>
     </Reference>
