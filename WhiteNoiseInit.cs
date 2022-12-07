@@ -50,7 +50,7 @@ namespace TheWhiteNoiseProject
         {
             ModParameters.CustomBookSkinsOptions.Add(WhiteNoiseModParameters.PackageId, new List<CustomBookSkinsOption>
             {
-                new CustomBookSkinsOption("HeadlessWhiteNoise_md5488", 10000002)
+                new CustomBookSkinsOption("HeadlessWhiteNoise_md5488", 10000002,iconId: "IconNameHERE")
             });
         }
         private static void OnInitSprites()
