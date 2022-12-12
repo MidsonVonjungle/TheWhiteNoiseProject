@@ -17,6 +17,7 @@ namespace TheWhiteNoiseProject
         {
             OnInitParameters();
             ArtUtil.GetArtWorks(new DirectoryInfo(WhiteNoiseModParameters.Path + "/ArtWork"));
+            ArtUtil.GetSpeedDieArtWorks(new DirectoryInfo(WhiteNoiseModParameters.Path + "/CustomDiceArtWork"));
             ArtUtil.PreLoadBufIcons();
             CardUtil.ChangeCardItem(ItemXmlDataList.instance, WhiteNoiseModParameters.PackageId);
             KeypageUtil.ChangeKeypageItem(BookXmlList.Instance, WhiteNoiseModParameters.PackageId);
