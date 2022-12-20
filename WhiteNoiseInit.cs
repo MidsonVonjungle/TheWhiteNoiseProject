@@ -126,7 +126,8 @@ namespace TheWhiteNoiseProject
             {
                 new KeypageOptions(10000001, isDeckFixed: true, everyoneCanEquip: true,
                     bookCustomOptions: new BookCustomOptions(nameTextId: 1),
-                    keypageColorOptions: new KeypageColorOptions(Color.white, Color.white)),
+                    keypageColorOptions: new KeypageColorOptions(Color.white, Color.white),
+                    customDiceColorOptions: new CustomDiceColorOptions("WhiteNoiseDice", Color.white)),
 
                 new KeypageOptions(10000002, isDeckFixed: true, everyoneCanEquip: true, bookCustomOptions: new BookCustomOptions())
             });
