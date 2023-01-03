@@ -41,6 +41,9 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>F:\Steam\steamapps\common\Library Of Ruina\LibraryOfRuina_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="CustomMapUtility">
+      <HintPath>F:\Softwares\Real Ruina modding hours\DLL codes\CustomMapUtility.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>F:\Softwares\Real Ruina modding hours\DLL codes\Mono.Cecil.dll</HintPath>
     </Reference>
