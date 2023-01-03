@@ -35,6 +35,6 @@ namespace TheWhiteNoiseProject
                 { new LorId(WhiteNoiseModParameters.PackageId, 12), new PersonalCardOptions() },
                 { new LorId(WhiteNoiseModParameters.PackageId, 13), new PersonalCardOptions() },
                 { new LorId(WhiteNoiseModParameters.PackageId, 14), new PersonalCardOptions() }
-            }));
+            }), WhiteNoiseModParameters.PackageId); 
     }
 }
